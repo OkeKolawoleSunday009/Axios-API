@@ -1,0 +1,27 @@
+@import './variables';
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    
+    color: $text;
+    height:200vh;
+}
+
+button{
+    font-family: inherit;
+    outline: none;
+    border: none;
+    background: none;
+    letter-spacing: inherit;
+    font-size: inherit;
+    text-align: inherit;
+    padding: 0;
+    color: inherit ;
+}

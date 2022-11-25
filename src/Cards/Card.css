@@ -1,0 +1,83 @@
+.container{
+    margin: 10px auto;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+   
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 144px;
+    gap: 20px;
+    margin:20px 0px;
+    padding: 20px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 5px 5px 5px rgb(188, 186, 186);
+    border-right:0;
+}
+
+.infected{
+    border-left: 10px solid rgba(0,0 ,255, 0.5);
+    border-bottom: 2px solid rgba(0,0 ,255, 0.5);
+
+}
+.recovered{
+    border-left: 10px solid rgba(0,255,0, 0.5);
+    border-bottom: 2px solid rgba(0,255,0, 0.5);
+
+
+}
+.death{
+    border-left: 10px solid rgba(0,0 ,0, 0.5);
+    border-bottom: 2px solid  rgba(0,0 ,0, 0.5);
+
+
+}
+
+/* .infected{
+    border-bottom: 2px solid rgba(0,0 ,255, 0.5);
+}
+.recovered{
+    border-bottom: 2px solid rgba(0,255,0, 0.5);
+
+}
+.death{
+    border-bottom: 2px solid rgba(0,0 ,0, 0.5);
+
+} */
+
+@media screen and (min-width:48em) {
+    .container{
+        flex-direction: row;
+        margin: 10px auto;
+    }
+   .content{
+    margin:  0px 20px;
+    /* border-right: 1px solid black; */
+   }
+
+
+    .infected{
+        border-bottom: 10px solid rgba(0,0 ,255, 0.5);
+        border-left: 0;
+        transition:  0.5s ease left;
+
+    }
+    .recovered{
+        border-bottom: 10px solid rgba(0,255,0, 0.5);
+        border-left: 0;
+        transition:  0.5s ease left;
+
+
+    }
+    .death{
+        border-bottom: 10px solid rgba(0,0 ,0, 0.5);
+        border-left: 0;
+        transition:  0.5s ease left;
+
+
+    }
+}
