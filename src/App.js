@@ -6,18 +6,18 @@ import './App.css';
 import { fetchData } from './API';
 
 export class App extends Component {
- constructor(props) {
-   super(props)
  
-   this.state = {
+ 
+   state = {
       data:{},
-   }
+   
  }
 
   async componentDidMount(){
     const fetchedData = await fetchData();
     // console.log(fetchedData);
     this.setState({data: fetchedData});
+    // console.log(fetchData);
   }
   render() {
 
