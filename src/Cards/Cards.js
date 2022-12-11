@@ -14,7 +14,7 @@ export default function Cards({data:{confirmed, deaths, recovered}}) {
     <div className='content infected'>
 
       <div><h5>REAL DATA</h5></div>
-      {/* {confirmed.value} */}
+      {confirmed.value}
     
       {/* <div>{new Date(data.lastUpdate).toDateString()}</div> */}
       <div>Number of active covid 19 cases</div>
@@ -23,7 +23,7 @@ export default function Cards({data:{confirmed, deaths, recovered}}) {
     <div className='content recovered'>
 
       <div><h5>Recovered</h5></div>
-      {/* {recovered.value} */}
+      {recovered.value}
 
       {/* <div>{new Date(props.data.lastUpdate).toDateString()}</div> */}
       <div>Number of active recovered covid 19 cases</div>
@@ -31,7 +31,7 @@ export default function Cards({data:{confirmed, deaths, recovered}}) {
     </div>
     <div className='content death'>
       <div><h5>Death</h5></div>
-      {/* {deaths.value} */}
+      {deaths.value}
 
       {/* <div>{new Date(props.data.lastUpdate).toDateString()}</div> */}
       <div>Number of active death covid 19 cases</div>
